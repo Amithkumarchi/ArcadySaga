@@ -1,2 +1,0 @@
-# ArcadySaga
-Created with CodeSandbox
