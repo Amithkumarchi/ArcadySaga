@@ -1,7 +1,14 @@
 import React from "react";
-
+import Gen from "../generators/Gen";
 const App = () => {
-  return <div>sagacomponent</div>;
+  let gen = Gen;
+  let value = gen().next().value;
+  return (
+    <div>
+      sagacomponent{}
+      {gen().next().value}
+    </div>
+  );
 };
 
 export default App;
