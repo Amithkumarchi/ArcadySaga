@@ -1,9 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const App = () => {
-  return <div>hello</div>;
-};
-
+import App from "./sagas/App";
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
