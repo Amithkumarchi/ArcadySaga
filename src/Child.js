@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { fetchData } from "./redux/Actions";
+import { fetchData } from "./redux-saga/Actions";
 
 const Child = () => {
   const dispatch = useDispatch();
