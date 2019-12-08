@@ -5,9 +5,9 @@
 import types from "./Constant";
 
 const reducers = (state = {}, action) => {
-  console.log(action);
+  console.log("the action", action);
   switch (action.type) {
-    case types.TOTAL: {
+    case types.DATA: {
       return action.payload;
     }
     default: {

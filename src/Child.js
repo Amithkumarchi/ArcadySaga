@@ -5,7 +5,9 @@ import { fetchData } from "./redux-saga/Actions";
 
 const Child = () => {
   const dispatch = useDispatch();
-  const val = useSelector(state => state.total);
+  const val = useSelector(state => {
+    return state.total;
+  });
   const handleVal = () => {
     //generally we need to pass action object
     // in dispatch but as we are dealing with async

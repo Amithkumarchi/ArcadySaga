@@ -6,9 +6,11 @@ import axios from "axios";
 // middleware this is for asynchronous functions thats
 // the reason we are using axios
 export const fetchData = dispatch => {
-  axios.get("https://reqres.in/api/users?page=2").then(res => {
+  //this is for reduxthunk
+  /*axios.get("https://reqres.in/api/users?page=2").then(res => {
     dispatch(actionCreator(types.TOTAL, res.data));
-  });
+  });*/
+  dispatch({ type: types.TOTAL });
 };
 
 const actionCreator = (type, payload) => {
